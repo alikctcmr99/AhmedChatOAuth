@@ -1,0 +1,47 @@
+@import "theme.less";
+
+html, body, .message-container{
+   height: 100%;
+  flex-direction: column;
+}
+
+.message-container, .message-form {
+  display: flex;
+}
+
+.message-form {
+  flex:1;
+  max-height:110px;
+  background-color: @base-color;
+  color: white;
+}
+
+.message-form button{
+  background-color: @button-color;
+}
+
+
+.message-list {
+  flex: 1; 
+  overflow: auto;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.message-form .input-field input {
+ border-color: #FFFFFF;
+}
+
+.chip {
+ font-style: italic;
+}
+
+i.material-icons{
+  line-height: inherit;
+}
+
+.collection .collection-item:last-child {
+  border-bottom: 0.1em solid #DCDCDC;
+}
+
+
